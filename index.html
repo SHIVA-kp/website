@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive guide on how the Internet works">
+
+    <title>How the Internet Works</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f0f0, #cce0ff);
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color:  #003366;
+            color: white;
+            text-alilgn: center;
+            padding: 15px;
+        }
+        nav a {
+            colore: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section, article, aside {
+            margin: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            text-align: left;
+        }
+        form {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>How the Internet Works</h1>
+        <nav>
+            <a href="#client-server">Client & Server</a>
+            <a href="#web-request">Web Request</a>
+            <a href="#tips">Tips</a>
+        </nav>
+    </header>
+    
+    <section id="client-server">
+        <h2>Client & Server Communication</h2>
+        <p><b>Client</b> sender a request to the <i>server</i>. The <u>server</u> processes and responds with data.<br>Protocols: HTTP, HTTPS</p>
+        <img src="client-server-digaram.png" alt="Client-Server Diagram">
+    </section>
+
+    <article id="web-request">
+        <h2>The Journey of a Web Request</h2>
+        <ol>
+            <li>User types a URL</li>
+            <li>DNS resolves sent to domain</li>
+            <li>Request sent to server</li>
+            <li>Server processes and displays data</li>
+            <li>Browesr receives and displays data</li>
+        </ol>
+        <p>HTTP<sub>1.1</sub> and HTPP<sup>2</sup> behave differently in request handling.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7_LPdtKXPc" tit;e="YouTub Video" frameberder="0" allowfullscreen></iframe>
+    </article>
+
+    <aside id="tips">
+        <h3>Quick Facts</h3>
+        <ul>
+            <li>HTTP: HyperText Transfer Protocol</li>
+            <li>DNS: Domain Name System</li>
+            <li>TCP/IP: Internet Protocol Suite</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="200" style="border:0; "allowfullscreen="" ;oding="Lazy"></iframe>
+    </aside>
+
+    <section>
+        <h2>HTML Structure & Formating</h2>
+        <p><b>Bold</b>, <i>Italic</i>, <u>Underline</u>, <sub>Sub</sub>, <sup>Super</sup></p>
+        <hr>
+        <p>HTML uses tags like <code> &lt;div&gt;</code>, <code>&lt;section&gt;</code>, etc.</p>
+    </section>
+
+    <section>
+        <h2>Comparison Tables</h2>
+        <table>
+            <tr><th>Function</th><th>Client</th><th>Server</th></tr>
+            <tr><td>Role</td><td>Requests Data</td><td>Respunds with Data</td></tr>
+            <tr><td>Location</td><td>User Device</td><td>Remote System</td></tr>
+        </table>
+        <table>
+            <tr><th>Frature</th><th>Static</th><th>Dynamic</th></tr>
+            <tr><td>Content</td><td>Fixed</td><td>Varies per User</td></tr>
+            <tr><td>Languages</td><td>HTML, CSS</td><td>HTML, CSS, JS, PHP</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Interactive Quiz</h2>
+        <form>
+            <p>1. What is a client?</p>
+            <label><input type="radio" name="q1" value="a"> A device that sends requests</label><br>
+            <label><input type="radio" name="q1" value="b"> A server that processes data</label><br><br>
+            <label>Your feedback:</label><br>
+            <input type="text" placeholder="Your thoughts...">
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Web Guide. Learn more at <a href="https://developer.mozilla.org">MDN Docs</a></p>
+    </footer>
+</body>
+
+</html>
